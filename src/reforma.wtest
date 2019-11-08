@@ -1,0 +1,13 @@
+import graboland.*
+describe "test cultivos" {
+
+const granLote = "completar"
+const miniLote = "completar"
+
+
+test "productividad "{
+	graboland.agregarLote(granLote)
+	graboland.agregarLote(miniLote)
+	assert.equals(1/2, graboland.porcentajeLotesProduccionSuficiente())
+	}
+}
