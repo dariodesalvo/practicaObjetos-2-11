@@ -1,8 +1,11 @@
-import graboland.*
+import reforma.*
 describe "test cultivos" {
 
-const granLote = "completar"
-const miniLote = "completar"
+const soja=new Cultivo(iintensidad=2)
+const trigo=new Cultivo(iintensidad=1)
+
+const granLote = new Lote(hectareas=1000,cultivo=soja,rendimientoAnual=5000)
+const miniLote = new Lote(hectareas=12,cultivo=trigo,rendimientoAnual=50)
 
 
 test "productividad "{
